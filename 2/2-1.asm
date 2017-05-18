@@ -1,0 +1,159 @@
+.386
+
+EXTERN TIMER:NEAR
+assume cs:CODE,ds:DATA,ss:STACK
+
+DATA SEGMENT USE16
+	N    EQU   30
+	BUF  DB  "zhangsan",0,0
+	DB   100, 85, 80,?
+	INFOSIZE EQU   $-BUF
+	DB   "lisi",6 DUP(0)
+	DB   80, 100, 70,?
+    DB   "wangwu",4 DUP(0)
+    DB   80, 80, 70,?
+	DB   N-4 DUP( "TempValue",0,80,90,95,?)
+	DB   "limuchen",0,0 
+	DB   80, 90, 100, ?
+
+	in_name DB 10,?,10 DUP(0)
+	hint 	DB "Please Input A Student's Name",0DH,0AH,'$'
+	not_exist DB 0DH,0AH,"Such Student Don't exist!",0DH,0AH,'$'
+;	pos	DW 0
+;	pnt	DW 0
+	weight  DB 4,2,1
+DATA ENDS
+
+
+STACK SEGMENT USE16 STACK
+    DB 10 DUP(0) 
+STACK ENDS
+
+
+CODE segment use16 PARA PUBLIC 'CODE'
+
+START:
+;; 输入与提示部分
+	MOV AX,DATA
+	MOV DS,AX				;有关于有必要给DS赋值的问题
+INPUT:	
+	MOV DX,OFFSET hint
+	MOV AH,09H
+	INT 21H
+
+	MOV DX,OFFSET in_name
+	MOV AH,0AH
+	INT 21H
+	MOV SI,OFFSET in_name+1
+	MOV BL,[SI]		;BL存储长度
+	CMP BL,0
+	JE INPUT
+	CMP BL,1
+	JG SEARCH
+	MOV BL,in_name+2
+	CMP BL,'q'
+	JE OVER
+	CMP BL,'Q'
+	JE OVER
+
+SEARCH:
+    MOV DL,0AH
+    MOV AH,2
+    INT 21H
+    CALL TIMER
+    MOV DI,0FFFFH
+    
+LOOP0xffff:
+	MOV SI,OFFSET BUF
+	MOV DX,0
+    
+   
+LOOP1:	
+	MOV BP,OFFSET in_name + 2
+	MOV BX,0
+	MOV CL, in_name+1
+	MOV CH,0
+LOOP2:	
+	MOV  AL,DS:[BP]				;为什么不能 CMP BYTE PTR [BP],BYTE PTR [BX][SI]
+	MOV  AH,[BX][SI]
+	CMP  AH,AL
+	JNE  CONTINUE
+	INC  BX
+	INC  BP
+	LOOP LOOP2
+	CMP  BYTE PTR [BX][SI],0
+	JE   CAL
+		
+CONTINUE:
+	ADD SI,INFOSIZE
+    INC DX
+	CMP DX,N
+	JLE  LOOP1
+	 
+	MOV DX,OFFSET not_exist
+	MOV AH,09H
+	INT 21H
+
+	JMP INPUT
+
+CAL:	
+;	MOV AX,DS:[SI]
+;	MOV pos,AX
+
+    push DI
+
+	ADD SI,10
+;	MOV BX,0
+	MOV DI,OFFSET weight
+	MOV CX,3
+	MOV DX,0
+SUM:	
+	MOVSX AX,BYTE PTR [SI]
+	MOVSX BX,BYTE PTR [DI]
+    IMUL AX,BX	
+	ADD DX,AX
+	INC SI
+    INC DI
+	LOOP SUM
+	MOV AX,DX
+	MOV BX,7
+	MOV DX,0
+	DIV BX
+    
+    POP DI
+    DEC DI
+    CMP DI,0
+    JNE LOOP0xffff
+    
+
+	CMP AX,90
+	MOV DL,'A'
+	JGE OUTPUT
+	CMP AX,80
+	MOV DL,'B'
+	JGE OUTPUT
+	CMP AX,70
+	MOV DL,'C'
+	JGE OUTPUT
+	CMP AX,60
+	MOV DL,'D'
+	JGE OUTPUT
+	MOV DL,'E'
+
+OUTPUT:	
+	MOV AH,2
+	INT 21H
+    MOV DL,0AH
+    MOV AH,2
+    INT 21H
+    CALL TIMER
+	MOV AH,1
+	INT 21H
+	JMP INPUT
+
+OVER:
+	MOV AH,4CH
+	INT 21H
+
+CODE ENDS
+	END START

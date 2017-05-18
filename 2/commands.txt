@@ -1,0 +1,5 @@
+;using command
+;x86_64-w64-mingw32-gcc 2-3.c -O0 -std=c99 -c
+;objdump -D -x -m i8086 -M intel 2-3.o > 2-3.c.o.asm
+;x86_64-w64-mingw32-gcc 2-3.c -m32 -O0 -std=c99 -o 2-3.exe
+;objdump -S -m i8086 -M intel 2-3.exe > 2-3.c.exe.asm

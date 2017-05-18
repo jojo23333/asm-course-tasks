@@ -1,0 +1,568 @@
+Microsoft (R) COFF/PE Dumper Version 14.00.24210.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file 3-2-main.obj
+
+File Type: COFF OBJECT
+
+FILE HEADER VALUES
+             14C machine (x86)
+               E number of sections
+        58F03CCF time date stamp Fri Apr 14 11:06:55 2017
+             B91 file pointer to symbol table
+              4B number of symbols
+               0 size of optional header
+               0 characteristics
+
+SECTION HEADER #1
+.drectve name
+       0 physical address
+       0 virtual address
+      62 size of raw data
+     244 file pointer to raw data (00000244 to 000002A5)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+  100A00 flags
+         Info
+         Remove
+         1 byte align
+
+RAW DATA #1
+  00000000: 20 20 20 2F 46 41 49 4C 49 46 4D 49 53 4D 41 54     /FAILIFMISMAT
+  00000010: 43 48 3A 22 5F 43 52 54 5F 53 54 44 49 4F 5F 49  CH:"_CRT_STDIO_I
+  00000020: 53 4F 5F 57 49 44 45 5F 53 50 45 43 49 46 49 45  SO_WIDE_SPECIFIE
+  00000030: 52 53 3D 30 22 20 2F 44 45 46 41 55 4C 54 4C 49  RS=0" /DEFAULTLI
+  00000040: 42 3A 22 4C 49 42 43 4D 54 22 20 2F 44 45 46 41  B:"LIBCMT" /DEFA
+  00000050: 55 4C 54 4C 49 42 3A 22 4F 4C 44 4E 41 4D 45 53  ULTLIB:"OLDNAMES
+  00000060: 22 20                                            " 
+
+   Linker Directives
+   -----------------
+   /FAILIFMISMATCH:_CRT_STDIO_ISO_WIDE_SPECIFIERS=0
+   /DEFAULTLIB:LIBCMT
+   /DEFAULTLIB:OLDNAMES
+
+SECTION HEADER #2
+.debug$S name
+       0 physical address
+       0 virtual address
+      84 size of raw data
+     2A6 file pointer to raw data (000002A6 to 00000329)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42100040 flags
+         Initialized Data
+         Discardable
+         1 byte align
+         Read Only
+
+RAW DATA #2
+  00000000: 04 00 00 00 F1 00 00 00 77 00 00 00 39 00 01 11  ....?...w...9...
+  00000010: 00 00 00 00 43 3A 5C 55 73 65 72 73 5C 37 37 39  ....C:\Users\779
+  00000020: 33 36 5C 67 69 74 5C 61 73 6D 2D 63 6F 75 72 73  36\git\asm-cours
+  00000030: 65 2D 74 61 73 6B 73 5C 33 5C 33 2D 32 2D 6D 61  e-tasks\3\3-2-ma
+  00000040: 69 6E 2E 6F 62 6A 00 3A 00 3C 11 01 22 00 00 07  in.obj.:.<.."...
+  00000050: 00 13 00 00 00 92 5E 00 00 13 00 00 00 92 5E 00  ......^.......^.
+  00000060: 00 4D 69 63 72 6F 73 6F 66 74 20 28 52 29 20 4F  .Microsoft (R) O
+  00000070: 70 74 69 6D 69 7A 69 6E 67 20 43 6F 6D 70 69 6C  ptimizing Compil
+  00000080: 65 72 00 00                                      er..
+
+SECTION HEADER #3
+    .bss name
+       0 physical address
+       0 virtual address
+      B4 size of raw data
+       0 file pointer to raw data
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0400080 flags
+         Uninitialized Data
+         8 byte align
+         Read Write
+
+SECTION HEADER #4
+  .rdata name
+       0 physical address
+       0 virtual address
+     156 size of raw data
+     32A file pointer to raw data (0000032A to 0000047F)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40300040 flags
+         Initialized Data
+         4 byte align
+         Read Only
+
+RAW DATA #4
+  00000000: 49 6E 66 6F 20 6F 66 20 73 74 75 64 65 6E 74 20  Info of student 
+  00000010: 25 64 3A 0A 00 00 00 00 50 6C 65 61 73 65 20 69  %d:.....Please i
+  00000020: 6E 70 75 74 20 6E 61 6D 65 3A 00 00 25 73 00 00  nput name:..%s..
+  00000030: 50 6C 65 61 73 65 20 69 6E 70 75 74 20 67 72 61  Please input gra
+  00000040: 64 65 20 6F 66 20 43 68 69 6E 65 73 65 20 4D 61  de of Chinese Ma
+  00000050: 74 68 20 61 6E 64 20 45 6E 67 6C 69 73 68 0A 00  th and English..
+  00000060: 25 64 25 64 25 64 00 00 47 72 61 64 65 3A 0A 00  %d%d%d..Grade:..
+  00000070: 6E 61 6D 65 20 20 20 20 20 20 09 43 68 69 6E 65  name      .Chine
+  00000080: 73 65 09 4D 61 74 68 09 45 6E 67 6C 69 73 68 09  se.Math.English.
+  00000090: 41 76 65 72 61 67 65 09 52 61 6E 6B 0A 00 00 00  Average.Rank....
+  000000A0: 25 2D 31 30 73 09 00 00 25 64 09 25 64 09 25 64  %-10s...%d.%d.%d
+  000000B0: 09 00 00 00 25 64 09 25 64 0A 00 00 53 65 6C 65  ....%d.%d...Sele
+  000000C0: 63 74 20 66 72 6F 6D 20 66 6F 6C 6C 6F 77 69 6E  ct from followin
+  000000D0: 67 3A 0A 00 31 2E 20 49 6E 70 75 74 20 6E 61 6D  g:..1. Input nam
+  000000E0: 65 20 61 6E 64 20 67 72 61 64 65 73 0A 00 00 00  e and grades....
+  000000F0: 32 2E 20 43 61 6C 63 75 6C 61 74 65 20 61 76 65  2. Calculate ave
+  00000100: 72 61 67 65 20 67 72 61 64 65 0A 00 33 2E 20 43  rage grade..3. C
+  00000110: 61 6C 63 75 6C 61 74 65 20 72 61 6E 6B 0A 00 00  alculate rank...
+  00000120: 34 2E 20 4F 75 74 70 75 74 20 72 65 70 6F 72 74  4. Output report
+  00000130: 0A 00 00 00 35 2E 20 45 78 69 74 0A 00 00 00 00  ....5. Exit.....
+  00000140: 25 64 00 00 49 6E 70 75 74 20 6E 6F 74 20 76 61  %d..Input not va
+  00000150: 6C 69 64 21 0A 00                                lid!..
+
+SECTION HEADER #5
+.text$mn name
+       0 physical address
+       0 virtual address
+     330 size of raw data
+     480 file pointer to raw data (00000480 to 000007AF)
+     7B0 file pointer to relocation table
+       0 file pointer to line numbers
+      40 number of relocations
+       0 number of line numbers
+60500020 flags
+         Code
+         16 byte align
+         Execute Read
+
+RAW DATA #5
+  00000000: 55 8B EC 51 C7 45 FC 00 00 00 00 EB 09 8B 45 FC  U.¨¬Q?E¨¹....?..E¨¹
+  00000010: 83 C0 01 89 45 FC 83 7D FC 05 7D 78 8B 4D FC 83  .¨¤..E¨¹.}¨¹.}x.M¨¹.
+  00000020: C1 01 51 68 00 00 00 00 E8 00 00 00 00 83 C4 08  ¨¢.Qh....¨¨.....?.
+  00000030: 68 00 00 00 00 E8 00 00 00 00 83 C4 04 6B 55 FC  h....¨¨.....?.kU¨¹
+  00000040: 24 81 C2 00 00 00 00 52 68 00 00 00 00 E8 00 00  $.?....Rh....¨¨..
+  00000050: 00 00 83 C4 08 68 00 00 00 00 E8 00 00 00 00 83  ...?.h....¨¨.....
+  00000060: C4 04 6B 45 FC 24 05 18 00 00 00 50 6B 4D FC 24  ?.kE¨¹$.....PkM¨¹$
+  00000070: 81 C1 14 00 00 00 51 6B 55 FC 24 81 C2 10 00 00  .¨¢....QkU¨¹$.?...
+  00000080: 00 52 68 00 00 00 00 E8 00 00 00 00 83 C4 10 E9  .Rh....¨¨.....?.¨¦
+  00000090: 79 FF FF FF 8B E5 5D C3 CC CC CC CC CC CC CC CC  y???.?]?¨¬¨¬¨¬¨¬¨¬¨¬¨¬¨¬
+  000000A0: 55 8B EC 51 68 00 00 00 00 E8 00 00 00 00 83 C4  U.¨¬Qh....¨¨.....?
+  000000B0: 04 68 00 00 00 00 E8 00 00 00 00 83 C4 04 C7 45  .h....¨¨.....?.?E
+  000000C0: FC 00 00 00 00 EB 09 8B 45 FC 83 C0 01 89 45 FC  ¨¹....?..E¨¹.¨¤..E¨¹
+  000000D0: 83 7D FC 05 0F 8D 88 00 00 00 6B 4D FC 24 81 C1  .}¨¹.......kM¨¹$.¨¢
+  000000E0: 00 00 00 00 51 68 00 00 00 00 E8 00 00 00 00 83  ....Qh....¨¨.....
+  000000F0: C4 08 6B 55 FC 24 B8 04 00 00 00 D1 E0 8B 8C 02  ?.kU¨¹$?....?¨¤...
+  00000100: 10 00 00 00 51 6B 55 FC 24 B8 04 00 00 00 C1 E0  ....QkU¨¹$?....¨¢¨¤
+  00000110: 00 8B 8C 02 10 00 00 00 51 6B 55 FC 24 B8 04 00  ........QkU¨¹$?..
+  00000120: 00 00 6B C8 00 8B 94 0A 10 00 00 00 52 68 00 00  ..k¨¨........Rh..
+  00000130: 00 00 E8 00 00 00 00 83 C4 10 6B 45 FC 24 8B 88  ..¨¨.....?.kE¨¹$..
+  00000140: 20 00 00 00 51 6B 55 FC 24 8B 82 1C 00 00 00 50   ...QkU¨¹$......P
+  00000150: 68 00 00 00 00 E8 00 00 00 00 83 C4 0C E9 65 FF  h....¨¨.....?.¨¦e?
+  00000160: FF FF 8B E5 5D C3 CC CC CC CC CC CC CC CC CC CC  ??.?]?¨¬¨¬¨¬¨¬¨¬¨¬¨¬¨¬¨¬¨¬
+  00000170: 55 8B EC 51 C7 45 FC 00 00 00 00 EB 09 8B 45 FC  U.¨¬Q?E¨¹....?..E¨¹
+  00000180: 83 C0 01 89 45 FC 83 7D FC 05 7D 24 6A 03 6B 4D  .¨¤..E¨¹.}¨¹.}$j.kM
+  00000190: FC 24 81 C1 10 00 00 00 51 E8 00 00 00 00 83 C4  ¨¹$.¨¢....Q¨¨.....?
+  000001A0: 08 0F BF D0 6B 45 FC 24 89 90 1C 00 00 00 EB CD  ..?DkE¨¹$......?¨ª
+  000001B0: 8B E5 5D C3 CC CC CC CC CC CC CC CC CC CC CC CC  .?]?¨¬¨¬¨¬¨¬¨¬¨¬¨¬¨¬¨¬¨¬¨¬¨¬
+  000001C0: 55 8B EC 83 EC 10 6A 14 E8 00 00 00 00 83 C4 04  U.¨¬.¨¬.j.¨¨.....?.
+  000001D0: 89 45 F4 6A 14 E8 00 00 00 00 83 C4 04 89 45 F0  .E?j.¨¨.....?..Ee
+  000001E0: C7 45 FC 00 00 00 00 EB 09 8B 45 FC 83 C0 01 89  ?E¨¹....?..E¨¹.¨¤..
+  000001F0: 45 FC 83 7D FC 05 7D 15 6B 4D FC 24 8B 55 FC 8B  E¨¹.}¨¹.}.kM¨¹$.U¨¹.
+  00000200: 45 F4 8B 89 1C 00 00 00 89 0C 90 EB DC 6A 05 8B  E?.........?¨¹j..
+  00000210: 55 F0 52 8B 45 F4 50 E8 00 00 00 00 83 C4 0C C7  UeR.E?P¨¨.....?.?
+  00000220: 45 F8 00 00 00 00 EB 09 8B 4D F8 83 C1 01 89 4D  E?....?..M?.¨¢..M
+  00000230: F8 83 7D F8 05 7D 15 6B 55 F8 24 8B 45 F8 8B 4D  ?.}?.}.kU?$.E?.M
+  00000240: F0 8B 04 81 89 82 20 00 00 00 EB DC 8B E5 5D C3  e..... ...?¨¹.?]?
+  00000250: 55 8B EC 83 EC 08 B8 01 00 00 00 85 C0 0F 84 B5  U.¨¬.¨¬.?.....¨¤..¦Ì
+  00000260: 00 00 00 68 00 00 00 00 E8 00 00 00 00 83 C4 04  ...h....¨¨.....?.
+  00000270: 68 00 00 00 00 E8 00 00 00 00 83 C4 04 68 00 00  h....¨¨.....?.h..
+  00000280: 00 00 E8 00 00 00 00 83 C4 04 68 00 00 00 00 E8  ..¨¨.....?.h....¨¨
+  00000290: 00 00 00 00 83 C4 04 68 00 00 00 00 E8 00 00 00  .....?.h....¨¨...
+  000002A0: 00 83 C4 04 68 00 00 00 00 E8 00 00 00 00 83 C4  ..?.h....¨¨.....?
+  000002B0: 04 8D 4D F8 51 68 00 00 00 00 E8 00 00 00 00 83  ..M?Qh....¨¨.....
+  000002C0: C4 08 8B 55 F8 89 55 FC 8B 45 FC 83 E8 01 89 45  ?..U?.U¨¹.E¨¹.¨¨..E
+  000002D0: FC 83 7D FC 04 77 2A 8B 4D FC FF 24 8D 00 00 00  ¨¹.}¨¹.w*.M¨¹?$....
+  000002E0: 00 E8 00 00 00 00 EB 2B E8 00 00 00 00 EB 24 E8  .¨¨....?+¨¨....?$¨¨
+  000002F0: 00 00 00 00 EB 1D E8 00 00 00 00 EB 16 33 C0 EB  ....?.¨¨....?.3¨¤?
+  00000300: 17 68 00 00 00 00 E8 00 00 00 00 83 C4 04 E9 43  .h....¨¨.....?.¨¦C
+  00000310: FF FF FF E9 3E FF FF FF 8B E5 5D C3 00 00 00 00  ???¨¦>???.?]?....
+  00000320: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+
+RELOCATIONS #5
+                                                Symbol    Symbol
+ Offset    Type              Applied To         Index     Name
+ --------  ----------------  -----------------  --------  ------
+ 00000024  DIR32                      00000000         B  $SG6535
+ 00000029  REL32                      00000000        33  _printf
+ 00000031  DIR32                      00000000         C  $SG6536
+ 00000036  REL32                      00000000        33  _printf
+ 00000043  DIR32                      00000000         8  ?stu@@3PAUstudent@@A (struct student * stu)
+ 00000049  DIR32                      00000000         D  $SG6537
+ 0000004E  REL32                      00000000        36  _scanf
+ 00000056  DIR32                      00000000         E  $SG6538
+ 0000005B  REL32                      00000000        33  _printf
+ 00000067  DIR32                      00000018         8  ?stu@@3PAUstudent@@A (struct student * stu)
+ 00000072  DIR32                      00000014         8  ?stu@@3PAUstudent@@A (struct student * stu)
+ 0000007D  DIR32                      00000010         8  ?stu@@3PAUstudent@@A (struct student * stu)
+ 00000083  DIR32                      00000000         F  $SG6539
+ 00000088  REL32                      00000000        36  _scanf
+ 000000A5  DIR32                      00000000        10  $SG6546
+ 000000AA  REL32                      00000000        33  _printf
+ 000000B2  DIR32                      00000000        11  $SG6547
+ 000000B7  REL32                      00000000        33  _printf
+ 000000E0  DIR32                      00000000         8  ?stu@@3PAUstudent@@A (struct student * stu)
+ 000000E6  DIR32                      00000000        12  $SG6548
+ 000000EB  REL32                      00000000        33  _printf
+ 00000100  DIR32                      00000010         8  ?stu@@3PAUstudent@@A (struct student * stu)
+ 00000114  DIR32                      00000010         8  ?stu@@3PAUstudent@@A (struct student * stu)
+ 00000128  DIR32                      00000010         8  ?stu@@3PAUstudent@@A (struct student * stu)
+ 0000012E  DIR32                      00000000        13  $SG6549
+ 00000133  REL32                      00000000        33  _printf
+ 00000140  DIR32                      00000020         8  ?stu@@3PAUstudent@@A (struct student * stu)
+ 0000014B  DIR32                      0000001C         8  ?stu@@3PAUstudent@@A (struct student * stu)
+ 00000151  DIR32                      00000000        14  $SG6550
+ 00000156  REL32                      00000000        33  _printf
+ 00000194  DIR32                      00000010         8  ?stu@@3PAUstudent@@A (struct student * stu)
+ 0000019A  REL32                      00000000        39  _get_average
+ 000001AA  DIR32                      0000001C         8  ?stu@@3PAUstudent@@A (struct student * stu)
+ 000001C9  REL32                      00000000        37  _malloc
+ 000001D6  REL32                      00000000        37  _malloc
+ 00000204  DIR32                      0000001C         8  ?stu@@3PAUstudent@@A (struct student * stu)
+ 00000218  REL32                      00000000        38  _get_rank
+ 00000246  DIR32                      00000020         8  ?stu@@3PAUstudent@@A (struct student * stu)
+ 00000264  DIR32                      00000000        15  $SG6580
+ 00000269  REL32                      00000000        33  _printf
+ 00000271  DIR32                      00000000        16  $SG6581
+ 00000276  REL32                      00000000        33  _printf
+ 0000027E  DIR32                      00000000        17  $SG6582
+ 00000283  REL32                      00000000        33  _printf
+ 0000028B  DIR32                      00000000        18  $SG6583
+ 00000290  REL32                      00000000        33  _printf
+ 00000298  DIR32                      00000000        19  $SG6584
+ 0000029D  REL32                      00000000        33  _printf
+ 000002A5  DIR32                      00000000        1A  $SG6585
+ 000002AA  REL32                      00000000        33  _printf
+ 000002B6  DIR32                      00000000        1B  $SG6586
+ 000002BB  REL32                      00000000        36  _scanf
+ 000002DD  DIR32                      00000000        3F  $LN14
+ 000002E2  REL32                      00000000        3A  ?input_info@@YAXXZ (void __cdecl input_info(void))
+ 000002E9  REL32                      00000000        3C  ?cal_average@@YAXXZ (void __cdecl cal_average(void))
+ 000002F0  REL32                      00000000        3D  ?cal_rank@@YAXXZ (void __cdecl cal_rank(void))
+ 000002F7  REL32                      00000000        3B  ?output_info@@YAXXZ (void __cdecl output_info(void))
+ 00000302  DIR32                      00000000        1C  $SG6593
+ 00000307  REL32                      00000000        33  _printf
+ 0000031C  DIR32                      00000000        40  $LN6
+ 00000320  DIR32                      00000000        41  $LN7
+ 00000324  DIR32                      00000000        42  $LN8
+ 00000328  DIR32                      00000000        43  $LN9
+ 0000032C  DIR32                      00000000        44  $LN10
+
+SECTION HEADER #6
+.text$mn name
+       0 physical address
+       0 virtual address
+       5 size of raw data
+     A30 file pointer to raw data (00000A30 to 00000A34)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+60501020 flags
+         Code
+         COMDAT; sym= "void __cdecl __vcrt_va_start_verify_argument_type<char const * const>(void)" (??$__vcrt_va_start_verify_argument_type@QBD@@YAXXZ)
+         16 byte align
+         Execute Read
+
+RAW DATA #6
+  00000000: 55 8B EC 5D C3                                   U.¨¬]?
+
+SECTION HEADER #7
+.text$mn name
+       0 physical address
+       0 virtual address
+       A size of raw data
+     A35 file pointer to raw data (00000A35 to 00000A3E)
+     A3F file pointer to relocation table
+       0 file pointer to line numbers
+       1 number of relocations
+       0 number of line numbers
+60501020 flags
+         Code
+         COMDAT; sym= ___local_stdio_printf_options
+         16 byte align
+         Execute Read
+
+RAW DATA #7
+  00000000: 55 8B EC B8 00 00 00 00 5D C3                    U.¨¬?....]?
+
+RELOCATIONS #7
+                                                Symbol    Symbol
+ Offset    Type              Applied To         Index     Name
+ --------  ----------------  -----------------  --------  ------
+ 00000004  DIR32                      00000000        47  ?_OptionsStorage@?1??__local_stdio_printf_options@@9@4_KA (unsigned __int64 `__local_stdio_printf_options'::`2'::_OptionsStorage)
+
+SECTION HEADER #8
+.text$mn name
+       0 physical address
+       0 virtual address
+       A size of raw data
+     A49 file pointer to raw data (00000A49 to 00000A52)
+     A53 file pointer to relocation table
+       0 file pointer to line numbers
+       1 number of relocations
+       0 number of line numbers
+60501020 flags
+         Code
+         COMDAT; sym= ___local_stdio_scanf_options
+         16 byte align
+         Execute Read
+
+RAW DATA #8
+  00000000: 55 8B EC B8 00 00 00 00 5D C3                    U.¨¬?....]?
+
+RELOCATIONS #8
+                                                Symbol    Symbol
+ Offset    Type              Applied To         Index     Name
+ --------  ----------------  -----------------  --------  ------
+ 00000004  DIR32                      00000000        4A  ?_OptionsStorage@?1??__local_stdio_scanf_options@@9@4_KA (unsigned __int64 `__local_stdio_scanf_options'::`2'::_OptionsStorage)
+
+SECTION HEADER #9
+.text$mn name
+       0 physical address
+       0 virtual address
+      29 size of raw data
+     A5D file pointer to raw data (00000A5D to 00000A85)
+     A86 file pointer to relocation table
+       0 file pointer to line numbers
+       2 number of relocations
+       0 number of line numbers
+60501020 flags
+         Code
+         COMDAT; sym= __vfprintf_l
+         16 byte align
+         Execute Read
+
+RAW DATA #9
+  00000000: 55 8B EC 8B 45 14 50 8B 4D 10 51 8B 55 0C 52 8B  U.¨¬.E.P.M.Q.U.R.
+  00000010: 45 08 50 E8 00 00 00 00 8B 48 04 51 8B 10 52 E8  E.P¨¨.....H.Q..R¨¨
+  00000020: 00 00 00 00 83 C4 18 5D C3                       .....?.]?
+
+RELOCATIONS #9
+                                                Symbol    Symbol
+ Offset    Type              Applied To         Index     Name
+ --------  ----------------  -----------------  --------  ------
+ 00000014  REL32                      00000000        2D  ___local_stdio_printf_options
+ 00000020  REL32                      00000000        30  ___stdio_common_vfprintf
+
+SECTION HEADER #A
+.text$mn name
+       0 physical address
+       0 virtual address
+      29 size of raw data
+     A9A file pointer to raw data (00000A9A to 00000AC2)
+     AC3 file pointer to relocation table
+       0 file pointer to line numbers
+       2 number of relocations
+       0 number of line numbers
+60501020 flags
+         Code
+         COMDAT; sym= __vfscanf_l
+         16 byte align
+         Execute Read
+
+RAW DATA #A
+  00000000: 55 8B EC 8B 45 14 50 8B 4D 10 51 8B 55 0C 52 8B  U.¨¬.E.P.M.Q.U.R.
+  00000010: 45 08 50 E8 00 00 00 00 8B 48 04 51 8B 10 52 E8  E.P¨¨.....H.Q..R¨¨
+  00000020: 00 00 00 00 83 C4 18 5D C3                       .....?.]?
+
+RELOCATIONS #A
+                                                Symbol    Symbol
+ Offset    Type              Applied To         Index     Name
+ --------  ----------------  -----------------  --------  ------
+ 00000014  REL32                      00000000        2E  ___local_stdio_scanf_options
+ 00000020  REL32                      00000000        34  ___stdio_common_vfscanf
+
+SECTION HEADER #B
+.text$mn name
+       0 physical address
+       0 virtual address
+      3F size of raw data
+     AD7 file pointer to raw data (00000AD7 to 00000B15)
+     B16 file pointer to relocation table
+       0 file pointer to line numbers
+       3 number of relocations
+       0 number of line numbers
+60501020 flags
+         Code
+         COMDAT; sym= _printf
+         16 byte align
+         Execute Read
+
+RAW DATA #B
+  00000000: 55 8B EC 83 EC 08 E8 00 00 00 00 8D 45 0C 89 45  U.¨¬.¨¬.¨¨.....E..E
+  00000010: FC 8B 4D FC 51 6A 00 8B 55 08 52 6A 01 E8 00 00  ¨¹.M¨¹Qj..U.Rj.¨¨..
+  00000020: 00 00 83 C4 04 50 E8 00 00 00 00 83 C4 10 89 45  ...?.P¨¨.....?..E
+  00000030: F8 C7 45 FC 00 00 00 00 8B 45 F8 8B E5 5D C3     ??E¨¹.....E?.?]?
+
+RELOCATIONS #B
+                                                Symbol    Symbol
+ Offset    Type              Applied To         Index     Name
+ --------  ----------------  -----------------  --------  ------
+ 00000007  REL32                      00000000        32  ??$__vcrt_va_start_verify_argument_type@QBD@@YAXXZ (void __cdecl __vcrt_va_start_verify_argument_type<char const * const>(void))
+ 0000001E  REL32                      00000000        2F  ___acrt_iob_func
+ 00000027  REL32                      00000000        31  __vfprintf_l
+
+SECTION HEADER #C
+.text$mn name
+       0 physical address
+       0 virtual address
+      3F size of raw data
+     B34 file pointer to raw data (00000B34 to 00000B72)
+     B73 file pointer to relocation table
+       0 file pointer to line numbers
+       3 number of relocations
+       0 number of line numbers
+60501020 flags
+         Code
+         COMDAT; sym= _scanf
+         16 byte align
+         Execute Read
+
+RAW DATA #C
+  00000000: 55 8B EC 83 EC 08 E8 00 00 00 00 8D 45 0C 89 45  U.¨¬.¨¬.¨¨.....E..E
+  00000010: FC 8B 4D FC 51 6A 00 8B 55 08 52 6A 00 E8 00 00  ¨¹.M¨¹Qj..U.Rj.¨¨..
+  00000020: 00 00 83 C4 04 50 E8 00 00 00 00 83 C4 10 89 45  ...?.P¨¨.....?..E
+  00000030: F8 C7 45 FC 00 00 00 00 8B 45 F8 8B E5 5D C3     ??E¨¹.....E?.?]?
+
+RELOCATIONS #C
+                                                Symbol    Symbol
+ Offset    Type              Applied To         Index     Name
+ --------  ----------------  -----------------  --------  ------
+ 00000007  REL32                      00000000        32  ??$__vcrt_va_start_verify_argument_type@QBD@@YAXXZ (void __cdecl __vcrt_va_start_verify_argument_type<char const * const>(void))
+ 0000001E  REL32                      00000000        2F  ___acrt_iob_func
+ 00000027  REL32                      00000000        35  __vfscanf_l
+
+SECTION HEADER #D
+    .bss name
+       0 physical address
+       0 virtual address
+       8 size of raw data
+       0 file pointer to raw data
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0401080 flags
+         Uninitialized Data
+         COMDAT; sym= "unsigned __int64 `__local_stdio_printf_options'::`2'::_OptionsStorage" (?_OptionsStorage@?1??__local_stdio_printf_options@@9@4_KA)
+         8 byte align
+         Read Write
+
+SECTION HEADER #E
+    .bss name
+       0 physical address
+       0 virtual address
+       8 size of raw data
+       0 file pointer to raw data
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0401080 flags
+         Uninitialized Data
+         COMDAT; sym= "unsigned __int64 `__local_stdio_scanf_options'::`2'::_OptionsStorage" (?_OptionsStorage@?1??__local_stdio_scanf_options@@9@4_KA)
+         8 byte align
+         Read Write
+
+COFF SYMBOL TABLE
+000 01055E92 ABS    notype       Static       | @comp.id
+001 80000191 ABS    notype       Static       | @feat.00
+002 00000000 SECT1  notype       Static       | .drectve
+    Section length   62, #relocs    0, #linenums    0, checksum        0
+004 00000000 SECT2  notype       Static       | .debug$S
+    Section length   84, #relocs    0, #linenums    0, checksum        0
+006 00000000 SECT3  notype       Static       | .bss
+    Section length   B4, #relocs    0, #linenums    0, checksum        0
+008 00000000 SECT3  notype       External     | ?stu@@3PAUstudent@@A (struct student * stu)
+009 00000000 SECT4  notype       Static       | .rdata
+    Section length  156, #relocs    0, #linenums    0, checksum BDCD7E8D
+00B 00000000 SECT4  notype       Static       | $SG6535
+00C 00000018 SECT4  notype       Static       | $SG6536
+00D 0000002C SECT4  notype       Static       | $SG6537
+00E 00000030 SECT4  notype       Static       | $SG6538
+00F 00000060 SECT4  notype       Static       | $SG6539
+010 00000068 SECT4  notype       Static       | $SG6546
+011 00000070 SECT4  notype       Static       | $SG6547
+012 000000A0 SECT4  notype       Static       | $SG6548
+013 000000A8 SECT4  notype       Static       | $SG6549
+014 000000B4 SECT4  notype       Static       | $SG6550
+015 000000BC SECT4  notype       Static       | $SG6580
+016 000000D4 SECT4  notype       Static       | $SG6581
+017 000000F0 SECT4  notype       Static       | $SG6582
+018 0000010C SECT4  notype       Static       | $SG6583
+019 00000120 SECT4  notype       Static       | $SG6584
+01A 00000134 SECT4  notype       Static       | $SG6585
+01B 00000140 SECT4  notype       Static       | $SG6586
+01C 00000144 SECT4  notype       Static       | $SG6593
+01D 00000000 SECT5  notype       Static       | .text$mn
+    Section length  330, #relocs   40, #linenums    0, checksum FD7A4BAD
+01F 00000000 SECT6  notype       Static       | .text$mn
+    Section length    5, #relocs    0, #linenums    0, checksum 672BE856, selection    2 (pick any)
+021 00000000 SECT7  notype       Static       | .text$mn
+    Section length    A, #relocs    1, #linenums    0, checksum 71A05264, selection    2 (pick any)
+023 00000000 SECT8  notype       Static       | .text$mn
+    Section length    A, #relocs    1, #linenums    0, checksum 71A05264, selection    2 (pick any)
+025 00000000 SECT9  notype       Static       | .text$mn
+    Section length   29, #relocs    2, #linenums    0, checksum 2B25B17F, selection    2 (pick any)
+027 00000000 SECTA  notype       Static       | .text$mn
+    Section length   29, #relocs    2, #linenums    0, checksum 2B25B17F, selection    2 (pick any)
+029 00000000 SECTB  notype       Static       | .text$mn
+    Section length   3F, #relocs    3, #linenums    0, checksum B26399F2, selection    2 (pick any)
+02B 00000000 SECTC  notype       Static       | .text$mn
+    Section length   3F, #relocs    3, #linenums    0, checksum 7DFD8E3A, selection    2 (pick any)
+02D 00000000 SECT7  notype ()    External     | ___local_stdio_printf_options
+02E 00000000 SECT8  notype ()    External     | ___local_stdio_scanf_options
+02F 00000000 UNDEF  notype ()    External     | ___acrt_iob_func
+030 00000000 UNDEF  notype ()    External     | ___stdio_common_vfprintf
+031 00000000 SECT9  notype ()    External     | __vfprintf_l
+032 00000000 SECT6  notype ()    External     | ??$__vcrt_va_start_verify_argument_type@QBD@@YAXXZ (void __cdecl __vcrt_va_start_verify_argument_type<char const * const>(void))
+033 00000000 SECTB  notype ()    External     | _printf
+034 00000000 UNDEF  notype ()    External     | ___stdio_common_vfscanf
+035 00000000 SECTA  notype ()    External     | __vfscanf_l
+036 00000000 SECTC  notype ()    External     | _scanf
+037 00000000 UNDEF  notype ()    External     | _malloc
+038 00000000 UNDEF  notype ()    External     | _get_rank
+039 00000000 UNDEF  notype ()    External     | _get_average
+03A 00000000 SECT5  notype ()    External     | ?input_info@@YAXXZ (void __cdecl input_info(void))
+03B 000000A0 SECT5  notype ()    External     | ?output_info@@YAXXZ (void __cdecl output_info(void))
+03C 00000170 SECT5  notype ()    External     | ?cal_average@@YAXXZ (void __cdecl cal_average(void))
+03D 000001C0 SECT5  notype ()    External     | ?cal_rank@@YAXXZ (void __cdecl cal_rank(void))
+03E 00000250 SECT5  notype ()    External     | _main
+03F 0000031C SECT5  notype       Static       | $LN14
+040 000002E1 SECT5  notype       Label        | $LN6
+041 000002E8 SECT5  notype       Label        | $LN7
+042 000002EF SECT5  notype       Label        | $LN8
+043 000002F6 SECT5  notype       Label        | $LN9
+044 000002FD SECT5  notype       Label        | $LN10
+045 00000000 SECTD  notype       Static       | .bss
+    Section length    8, #relocs    0, #linenums    0, checksum        0, selection    2 (pick any)
+047 00000000 SECTD  notype       External     | ?_OptionsStorage@?1??__local_stdio_printf_options@@9@4_KA (unsigned __int64 `__local_stdio_printf_options'::`2'::_OptionsStorage)
+048 00000000 SECTE  notype       Static       | .bss
+    Section length    8, #relocs    0, #linenums    0, checksum        0, selection    2 (pick any)
+04A 00000000 SECTE  notype       External     | ?_OptionsStorage@?1??__local_stdio_scanf_options@@9@4_KA (unsigned __int64 `__local_stdio_scanf_options'::`2'::_OptionsStorage)
+
+String Table Size = 0x1B8 bytes
+
+  Summary
+
+          C4 .bss
+          84 .debug$S
+          62 .drectve
+         156 .rdata
+         419 .text$mn
